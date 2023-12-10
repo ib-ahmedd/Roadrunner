@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoadRunner-Home</title>
+    <link
+      rel="shortcut icon"
+      href="./images/Roadrunner-Logo.6506be05.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css.css" />
+    <style>
+      @media screen and (max-width: 1000px) {
+        #navBarContent {
+          display: none;
+        }
+
+        #navBarResponseButton {
+          display: inline-block;
+        }
+
+        .fullWidth {
+          width: 100%;
+        }
+
+        body {
+          padding: 0;
+        }
+
+        .body {
+          position: relative;
+          width: 100%;
+        }
+
+        #firstBodyBg {
+          width: 100%;
+          position: static;
+        }
+        #firstBodyBg img {
+          width: 100%;
+          margin: auto;
+          position: static;
+        }
+        .second_body {
+          padding: 300px 0;
+          height: 400px;
+          width: 100%;
+        }
+        .sec_left {
+          width: 80%;
+          margin: auto;
+        }
+        .sec_right {
+          width: 100%;
+          position: relative;
+          bottom: 600px;
+          font-size: 2em;
+        }
+
+        .img img {
+          width: 50%;
+          position: absolute;
+          top: 5vh;
+        }
+
+        .third_body {
+          padding-bottom: 1400px;
+        }
+        .third_text img {
+          width: 50%;
+          position: absolute;
+          left: 10%;
+          float: left;
+        }
+        .third_text {
+          padding-bottom: 500px;
+        }
+
+        .third_text h3 {
+          width: 70%;
+        }
+
+        .footer img {
+          display: block;
+          position: relative;
+          bottom: -10px;
+          right: 40%;
+        }
+        #footerLinks {
+          display: inline-block;
+          width: 100%;
+        }
+        .end a {
+          position: relative;
+          top: 70px;
+          right: 60%;
+        }
+        .end img {
+          width: 15%;
+        }
+        #footerLinkText {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="font-family: sans-serif; width: 100%; overflow-x: hidden"
+    onload="revealTop()"
+  >
+    <div class="background">
+      <div id="road_logo" style="z-index: 4">
+        <a href="./index.html"
+          ><img src="./images/Roadrunner-Logo.6506be05.png" alt=""
+        /></a>
+      </div>
+      <div class="black" style="z-index: 3"></div>
+      <div class="navbar">
+        <div id="navBarContent">
+          <a href="./links/howItWorks.html" id="howItWorks">HOW IT WORKS</a>
+          <button id="company">
+            <span class="navBarButton" id="companyT">COMPANY</span>
+            <div id="popUp">
+              <a href="./links/about.html">About</a>
+              <a href="./links/contactUs.html">Contact Us</a>
+            </div>
+          </button>
+          <a href="./links/finance.html" id="finance" class="navBarButton"
+            >FINANCE</a
+          >
+          <a href="./links/FAQs.html" id="faqs" class="navBarButton">FAQS</a>
+          <a href="./links/dashboard.html" id="dash" class="navBarButton"
+            >DASHBOARD</a
+          >
+          <a href="./links/signUp.html" id="login">SIGN UP</a>
+        </div>
+        <button id="navBarResponseButton">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <div id="navBarResRight">
+        <img src="./images/Roadrunner-Logo.6506be05.png" alt="" />
+        <a href="./links/HowItWorks/index.html" class="navBarResLinks"
+          ><i class="fa-solid fa-arrow-right"></i> How It Works</a
+        >
+        <a href="./links/About/index.html" class="navBarResLinks"
+          ><i class="fa-solid fa-arrow-right"></i> About</a
+        >
+        <a href="./links/ContactUs/index.html" class="navBarResLinks"
+          ><i class="fa-solid fa-arrow-right"></i> Contact Us</a
+        >
+        <a href="./links/Finance/index.html" class="navBarResLinks"
+          ><i class="fa-solid fa-arrow-right"></i> Finance</a
+        >
+        <a href="./links/FAQS/index.html" class="navBarResLinks"
+          ><i class="fa-solid fa-arrow-right"></i> FAQS</a
+        >
+        <a href="./links/Dashboard/index.html" class="navBarResLinks"
+          ><i class="fa-solid fa-arrow-right"></i> Dashboard</a
+        >
+        <a href="./links/SignUp/index.html" class="navBarResLinks"
+          ><i class="fa-solid fa-arrow-right"></i> Sign Up</a
+        >
+      </div>
+      <div id="navBarResLeft"></div>
+
+      <div id="firstBodyBg">
+        <img src="./images/background image.png" alt="" />
+      </div>
+      <div class="body">
+        <div class="main_heading topReveal">
+          <h1 class="fullWidth">Deliver Your Packages Comfortably</h1>
+        </div>
+
+        <div id="intro" class="topReveal">
+          <p class="fullWidth">Deliver Your Packages The Right Way</p>
+        </div>
+
+        <div id="app_buttons" class="topReveal fullWidth">
+          <a href=""><img src="./images/logo app store.jfif" alt="" /></a>
+          <a href=""><img src="./images/logo google play.jfif" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="second_body">
+      <div class="sec_left reveal fullWidth">
+        <h2>Estimate Delivery</h2>
+        <form action="">
+          <input
+            type="text"
+            placeholder=" &#xf601; Enter pick-up location"
+            id="inputText"
+          /><br />
+          <input
+            type="text"
+            placeholder=" &#xf3c5; Enter drop off location"
+            id="inputText"
+          />
+          <br />
+          <p id="add">+ Add Drop-off Location</p>
+          <br />
+          <input type="checkbox" name="Optimize_ride" />
+          <label for="optimize_ride" id="opt">Optimize ride</label><br />
+          <input type="submit" value="Estimate Ride" />
+        </form>
+      </div>
+
+      <div class="sec_right reveal">
+        Find & connect to the nearest rider for your deliveries with Roadrunner.
+      </div>
+    </div>
+
+    <div class="third_body">
+      <div class="third_text reveal fullWidth">
+        <h3 class="fullWidth">Earn Over ₦100,000 Monthly As A Rider.</h3>
+        <br />
+        <button id="get_started">Get Started</button>
+        <img src="./images/get-started-bg.a89f3faa.png" alt="" />
+      </div>
+
+      <div class="img_section reveal">
+        <h3>We Deliver More Than Your Packages</h3>
+
+        <div class="img_container reveal fullWidth">
+          <div class="img">
+            <img src="./images/Layer_36.17c52ba1.svg" alt="" />
+          </div>
+          <h4>Safety</h4>
+          <p>Deliver your packages with peace of mind.</p>
+        </div>
+
+        <div class="img_container reveal fullWidth">
+          <div class="img">
+            <img src="./images/track_delivery.68c0ceec.svg" alt="" />
+          </div>
+          <h4>Delivery Tracking</h4>
+          <p>Know where your package is at any time.</p>
+        </div>
+
+        <div class="img_container reveal fullWidth">
+          <div class="img">
+            <img src="./images/Layer_43.fccbcaa8.svg" alt="" />
+          </div>
+          <h4>Swift Delivery</h4>
+          <p>Quick response from riders to deliver your packages.</p>
+        </div>
+
+        <div class="img_container reveal fullWidth">
+          <div class="img">
+            <img src="./images/Easy_paymnt.d4274f84.svg" alt="" />
+          </div>
+          <h4>Quick Payment</h4>
+          <p>Easy and fast payment for services on the app.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="get_started">
+      <h3>Get Started With RoadRunner</h3>
+
+      <div class="get_started_col reveal">
+        <i class="fa-solid fa-user-large"></i>
+        <h4>Register as a Customer</h4>
+        <p>I want to order rides to deliver my packages.</p>
+        <a href="">Get started</a>
+      </div>
+
+      <div class="get_started_col reveal">
+        <i class="fa-solid fa-motorcycle"></i>
+        <h4>Register as a Rider</h4>
+        <p>I want to get requests to deliver packages.</p>
+        <a href="">Get started</a>
+      </div>
+
+      <div class="get_started_col reveal">
+        <i class="fa-solid fa-landmark"></i>
+        <h4>Register as a Business</h4>
+        <p>I am an individual/company with a fleet of riders</p>
+        <a href="">Get started</a>
+      </div>
+    </div>
+
+    <div class="partners">
+      <h3 class="reveal">
+        With <span id="underline">Roadrunner Finance</span> You Can Drive Your
+        Dream Car, Bike, Or Van With One Of Our Partners.
+      </h3>
+      <a href="">Coming To You Soon</a>
+    </div>
+    <div class="end">
+      <h3 class="reveal">Download The Road Runner App Now</h3>
+      <div id="endLogos">
+        <a href="" class="reveal"
+          ><img src="./images/logo app store.jfif" alt=""
+        /></a>
+        <a href="" class="reveal"
+          ><img src="./images/logo google play.jfif" alt=""
+        /></a>
+      </div>
+    </div>
+    <div class="extras">
+      <img src="./images/Roadrunner-Logo.6506be05.png" alt="" />
+      <a href="./links/howItWorks.html">How It Works</a>
+      <a href="./links/about.html">About Us</a>
+      <a href="./links/contactUs.html">Work With Us</a>
+      <a href="./links/contactUs.html">Support</a>
+      <a href="">Legal</a>
+      <a href="./links/FAQs.html">FAQS</a>
+    </div>
+
+    <div class="footer">
+      <div class="footer_content">
+        <div id="footerLinkText">
+          <p>
+            copyright &copy 2022, Road Runner <a href="">Privacy Policy</a>
+            <a href="">Terms And Conditions</a>
+          </p>
+        </div>
+        <div id="footerLinks">
+          <a href="https://vm.tiktok.com/ZMFRgdwLw/" target="_blank"
+            ><img src="./images/tiktok logo.png" alt=""
+          /></a>
+          <a
+            href="https://youtube.com/channel/UCXRnRu61Gix3saQu9oi6c7A?utm_source=EKLEiJECCKjOmKnC5IiRIQ"
+            target="_blank"
+            ><img src="./images/youtube logo.png" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/road-runner-mobility-tech/"
+            target="_blank"
+            ><img src="./images/linkedin logo.png" alt=""
+          /></a>
+          <a href="https://instagram.com/roadrunner.app" target="_blank"
+            ><img src="./images/instagram logo.png" alt=""
+          /></a>
+          <a href="https://twitter.com/road_runnerapp" target="_blank"
+            ><img src="./images/twitter logo.png" alt=""
+          /></a>
+          <a href="https://www.facebook.com/roadrunnerafrica" target="_blank"
+            ><img src="./images/facebook logo.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
